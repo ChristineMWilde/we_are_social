@@ -1,0 +1,70 @@
+[
+{
+    "model": "threads.subject",
+    "pk": 1,
+    "fields": {
+        "name": "test",
+        "description": "<p>test</p>"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 1,
+    "fields": {
+        "name": "Christine",
+        "user": 1,
+        "subject": 1,
+        "created_at": "2018-07-07T12:06:38Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 2,
+    "fields": {
+        "name": "Ice Cream",
+        "user": 6,
+        "subject": 1,
+        "created_at": "2018-07-15T10:52:48.618Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 3,
+    "fields": {
+        "name": "Ice Cream",
+        "user": 6,
+        "subject": 1,
+        "created_at": "2018-07-15T10:58:01.032Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 1,
+    "fields": {
+        "thread": 1,
+        "comment": "<p>test</p>",
+        "user": 1,
+        "created_at": "2018-07-07T12:06:29Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 2,
+    "fields": {
+        "thread": 2,
+        "comment": "<p>vanilla flavour</p>",
+        "user": 6,
+        "created_at": "2018-07-15T10:52:48.619Z"
+    }
+},
+{
+    "model": "threads.post",
+    "pk": 3,
+    "fields": {
+        "thread": 3,
+        "comment": "<p>vanilla flavour</p>",
+        "user": 6,
+        "created_at": "2018-07-15T10:58:01.033Z"
+    }
+}
+]
