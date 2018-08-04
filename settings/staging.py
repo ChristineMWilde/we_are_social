@@ -1,12 +1,12 @@
 from base import *
+import os
+import dj_database_url
+import settings
  
 DEBUG = False
  
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
  
 # Stripe environment variables
@@ -14,8 +14,8 @@ STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_huXVMABXPzJmtBClro
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_qgkn8rHXvHGEtPaqreOCeXi7')
 
  
-SITE_URL = 'https://code-institute-social-cw.herokuapp.com'
-ALLOWED_HOSTS.append('code-institute-social-cw.herokuapp.com')
+SITE_URL = 'https://code-institute-social-wilde.herokuapp.com'
+ALLOWED_HOSTS.append('code-institute-social-wilde.herokuapp.com')
  
 # Log DEBUG information to the console
 LOGGING = {
