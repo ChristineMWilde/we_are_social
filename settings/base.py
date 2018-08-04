@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'magazines',
     'threads',
     'polls',
+    
 ]
  
 AUTH_USER_MODEL = 'accounts.User'
@@ -49,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+  
 ]
  
 ROOT_URLCONF = 'social_prj.urls'
